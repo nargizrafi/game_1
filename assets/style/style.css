@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Libre+Baskerville&display=swap');
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/bg3.png);
+    background-size: cover;
+}
+.layout{
+    width: inherit;
+    height: inherit;
+    background-color: rgba(0, 0,0,.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+h2{
+    color: rgb(184, 138, 74);
+    display: inline-block;
+    padding: 10px;
+    font-size: 1.3em;
+    font-family: 'Henny Penny', cursive;
+    border: 4px inset rgb(184, 138, 74);
+    border-radius: 10px;
+    box-shadow: 0px 0px 1px gold;
+    text-shadow: 1px 1px 1px gold;
+    text-align: center;
+}
+.common{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+.cmnhero{
+    display: flex;
+    flex-direction: column;
+}
+.abouthero,.aboutenemy{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(184, 138, 74);
+    font-family: 'Henny Penny', cursive;
+}
+
+.enemydiv{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.heroesdiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: 1s all;
+}
+.heroes{
+    display: flex;
+}
+.enemies{
+    display: flex;
+    width: 100%;
+}
+.enemiesdiv{
+    flex-direction: column;
+    gap: 10px;
+    display: none;
+}
+.hero{
+    width: 150px;
+    height: 150px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.hero:hover{
+    box-shadow: 0px 0px 4px rgb(184, 138, 74);
+    transform: scale(1.05);
+}
+.alphonse{
+    background-image: url(../images/alphonse.png);
+}
+.edward{
+    background-image: url(../images/edward.png);
+}
+.lingyao{
+    background-image: url(../images/lingyao.png);
+}
+.scar{
+    background-image: url(../images/scar.png);
+}
+.fight{
+    display: none;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    border: 1px inset  rgb(184, 138, 74);
+    color:  rgb(184, 138, 74);
+    background-color: transparent;
+    box-shadow: 0px 0px 4px  rgb(184, 138, 74);
+    font-family: 'Henny Penny', cursive;
+    cursor: pointer;
+
+}
+.fight:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px  rgb(184, 138, 74);
+}
+.fightzone{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/bg1.png);
+    background-position: center;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.firstzone{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.left1,.right{
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.lefthero,.rightenemy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.lefthero:hover,.rightenemy:hover{
+    transform: scale(1.05);
+}
+.attack{
+
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 1.5em;
+    border: 1px inset  rgb(184, 138, 74);
+    color: white;
+    background-color:   rgb(184, 138, 74);
+    box-shadow: 0px 0px 4px  rgb(184, 138, 74);
+    font-family: 'Henny Penny', cursive;
+    cursor: pointer;
+
+}
+.attack:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px  rgb(184, 138, 74);
+}
+.red1,.red2{
+    width: 300px;
+    height: 30px;
+    background-color: red;
+    border-radius: 10px;
+}
+.green1,.green2{
+    width: 300px;
+    height: 30px;
+    background-color: green;
+    border-radius: 10px;
+}

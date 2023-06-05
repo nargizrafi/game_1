@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./js/index.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="layout">
+            <div class="common">
+                <div class="heroesdiv">
+                    <h2 class="h21">Choose Your Character</h2>
+                    <div class="cmnhero">
+                        <div class="abouthero">
+                            <p>Name : <span class="name1"></span></p>
+                            <p>Power : <span class="power1"></span></p>
+                            <p>Health : <span class="health1"></span></p>
+                        </div>
+                        <div class="heroes">
+                            <div class="edward hero" data-name="Edward" data-power="30" data-health="260"></div>
+                            <div class="alphonse hero" data-name="Alphonse" data-power="28" data-health="300"></div>
+                            <div class="lingyao hero" data-name="Ling Yao(Greed)" data-power="22" data-health="250">
+                            </div>
+                            <div class="scar hero" data-name="Scar" data-power="25" data-health="270"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="enemydiv">
+                    <h2>Enemy</h2>
+                    <div class="aboutenemy">
+                        <p>Name: <span class="name2"></span></p>
+                        <p>Power: <span class="power2"></span></p>
+                        <p>Health: <span class="health2"></span></p>
+                    </div>
+                    <div class="enemy"></div>
+                </div>
+            </div>
+            <div class="enemiesdiv">
+                <h2>Choose Your Enemy</h2>
+                <div class="enemies"></div>
+            </div>
+            <button class="fight">Fight</button>
+        </div>
+    </div>
+    <div class="fightzone">
+        <div class="firstzone">
+            <div class="left1">
+                <h2>Your Character</h2>
+                <div class="top1"></div>
+                <div class="bottom1">
+                    <div class="red1">
+                        <div class="green1"></div>
+                    </div>
+                   
+                </div> 
+                <div class="lefthero"></div>
+            </div>
+            <div class="right">
+                <h2>Enemy</h2>
+                <div class="top2"></div>
+                <div class="bottom2">
+                    <div class="red2">
+                        <div class="green2"></div>
+                    </div>
+                </div>
+                <div class="rightenemy"></div>
+            </div>
+        </div>
+        <button class="attack">Attack</button>
+    </div>
+</body>
+
+</html>
