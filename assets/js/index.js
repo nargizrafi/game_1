@@ -29,6 +29,7 @@ var rightenemy = document.querySelector('.rightenemy')
 var green1 = document.querySelector('.green1')
 var green2 = document.querySelector('.green2')
 var attack = document.querySelector('.attack')
+var viczone = document.querySelector('.viczone')
 var herovar = false
 var enemyvar = false
 edward.onclick = function () {
@@ -225,14 +226,22 @@ attack.onclick = function () {
             if (scar.dataset.health < 0) {
                 green2.style.width = '0px'
                 setTimeout(() => {
-                    alert('You won')
+                    fightzone.style.display='none'
+                    viczone.style.display='flex'
+                    var pp = document.createElement('p')
+                    pp.innerText='YOU WON!'
+                    viczone.append(pp)
                 }, 100); 
 
             }
             else if (edward.dataset.health < 0) {
                 green1.style.width = '0px'
                 setTimeout(() => {
-                 alert('You lost')   
+                    fightzone.style.display='none'
+                    viczone.style.display='flex'
+                    var pp = document.createElement('p')
+                    pp.innerText='YOU LOST!'
+                    viczone.append(pp) 
                 }, 100);
                 
             }
@@ -245,13 +254,21 @@ attack.onclick = function () {
             if (alphonse.dataset.health < 0) {
                 green2.style.width = '0px'
                 setTimeout(() => {
-                    alert('You won')
+                   fightzone.style.display='none'
+                    viczone.style.display='flex'
+                    var pp = document.createElement('p')
+                    pp.innerText='YOU WON!'
+                    viczone.append(pp)
                 }, 100); 
             }
             else if (edward.dataset.health < 0) {
                 green1.style.width = '0px'
                 setTimeout(() => {
-                    alert('You lost')   
+                   fightzone.style.display='none'
+                    viczone.style.display='flex'
+                    var pp = document.createElement('p')
+                    pp.innerText='YOU LOST!'
+                    viczone.append(pp)  
                    }, 500);
             }
         }
@@ -263,13 +280,21 @@ attack.onclick = function () {
             if (lingyao.dataset.health < 0) {
                 green2.style.width = '0px'
                 setTimeout(() => {
-                    alert('You won')
+                    fightzone.style.display='none'
+                    viczone.style.display='flex'
+                    var pp = document.createElement('p')
+                    pp.innerText='YOU WON!'
+                    viczone.append(pp)
                 }, 500); 
             }
             else if (edward.dataset.health < 0) {
                 green1.style.width = '0px'
                 setTimeout(() => {
-                    alert('You lost')   
+                    fightzone.style.display='none'
+                    viczone.style.display='flex'
+                    var pp = document.createElement('p')
+                    pp.innerText='YOU LOST!'
+                    viczone.append(pp)    
                    }, 100);
             }
         }
@@ -284,13 +309,21 @@ attack.onclick = function () {
             if (scar.dataset.health < 0) {
                 green2.style.width = '0px'
                  setTimeout(() => {
-                    alert('You won')
+                   fightzone.style.display='none'
+                    viczone.style.display='flex'
+                    var pp = document.createElement('p')
+                    pp.innerText='YOU WON!'
+                    viczone.append(pp)
                 }, 500); 
             }
             else if (alphonse.dataset.health < 0) {
                 green1.style.width = '0px'
                 setTimeout(() => {
-                    alert('You lost')   
+                   fightzone.style.display='none'
+                    viczone.style.display='flex'
+                    var pp = document.createElement('p')
+                    pp.innerText='YOU LOST!'
+                    viczone.append(pp)    
                    }, 500);
             }
         }
@@ -302,13 +335,21 @@ attack.onclick = function () {
             if (edward.dataset.health < 0) {
                 green2.style.width = '0px'
                 setTimeout(() => {
-                    alert('You won')
+                   fightzone.style.display='none'
+                    viczone.style.display='flex'
+                    var pp = document.createElement('p')
+                    pp.innerText='YOU WON!'
+                    viczone.append(pp)
                 }, 500); 
             }
             else if (alphonse.dataset.health < 0) {
                 green1.style.width = '0px'
                 setTimeout(() => {
-                    alert('You lost')   
+                    fightzone.style.display='none'
+                    viczone.style.display='flex'
+                    var pp = document.createElement('p')
+                    pp.innerText='YOU LOST!'
+                    viczone.append(pp)    
                    }, 100);
             }
         }
@@ -320,13 +361,21 @@ attack.onclick = function () {
             if (lingyao.dataset.health < 0) {
                 green2.style.width = '0px'
                 setTimeout(() => {
-                    alert('You won')
+                    fightzone.style.display='none'
+                    viczone.style.display='flex'
+                    var pp = document.createElement('p')
+                    pp.innerText='YOU WON!'
+                    viczone.append(pp)
                 }, 100); 
             }
             else if (alphonse.dataset.health < 0) {
                 green1.style.width = '0px'
                 setTimeout(() => {
-                    alert('You lost')   
+                    fightzone.style.display='none'
+                    viczone.style.display='flex'
+                    var pp = document.createElement('p')
+                    pp.innerText='YOU LOST!'
+                    viczone.append(pp)   
                    }, 100);
             }
         }
@@ -340,13 +389,21 @@ alphonse.dataset.health =alphonse.dataset.health - (Math.floor(Math.random() * s
             if (alphonse.dataset.health < 0) {
                 green2.style.width = '0px'
                 setTimeout(() => {
-                    alert('You won')
+                    fightzone.style.display='none'
+                    viczone.style.display='flex'
+                    var pp = document.createElement('p')
+                    pp.innerText='YOU WON!'
+                    viczone.append(pp)
                 }, 100); 
             }
             else if (scar.dataset.health < 0) {
                 green1.style.width = '0px'
                 setTimeout(() => {
-                    alert('You lost')   
+                  fightzone.style.display='none'
+                    viczone.style.display='flex'
+                    var pp = document.createElement('p')
+                    pp.innerText='YOU LOST!'
+                    viczone.append(pp)   
                    }, 100);
             }
         }
@@ -358,13 +415,21 @@ alphonse.dataset.health =alphonse.dataset.health - (Math.floor(Math.random() * s
             if (edward.dataset.health < 0) {
                 green2.style.width = '0px'
                 setTimeout(() => {
-                    alert('You won')
+                    fightzone.style.display='none'
+                    viczone.style.display='flex'
+                    var pp = document.createElement('p')
+                    pp.innerText='YOU WON!'
+                    viczone.append(pp)
                 }, 100); 
             }
             else if (scar.dataset.health < 0) {
                 green1.style.width = '0px'
                 setTimeout(() => {
-                    alert('You lost')   
+                   fightzone.style.display='none'
+                    viczone.style.display='flex'
+                    var pp = document.createElement('p')
+                    pp.innerText='YOU LOST!'
+                    viczone.append(pp)    
                    }, 100);
             }
         }
@@ -376,13 +441,21 @@ alphonse.dataset.health =alphonse.dataset.health - (Math.floor(Math.random() * s
             if (lingyao.dataset.health < 0) {
                 green2.style.width = '0px'
                 setTimeout(() => {
-                    alert('You won')
+                    fightzone.style.display='none'
+                    viczone.style.display='flex'
+                    var pp = document.createElement('p')
+                    pp.innerText='YOU WON!'
+                    viczone.append(pp)
                 }, 100); 
             }
             else if (scar.dataset.health < 0) {
                 green1.style.width = '0px'
                 setTimeout(() => {
-                    alert('You lost')   
+                    fightzone.style.display='none'
+                    viczone.style.display='flex'
+                    var pp = document.createElement('p')
+                    pp.innerText='YOU LOST!'
+                    viczone.append(pp)    
                    }, 100);
             }
         }
@@ -397,13 +470,21 @@ alphonse.dataset.health =alphonse.dataset.health - (Math.floor(Math.random() * s
             if (scar.dataset.health < 0) {
                 green2.style.width = '0px'
                 setTimeout(() => {
-                    alert('You won')
+                   fightzone.style.display='none'
+                    viczone.style.display='flex'
+                    var pp = document.createElement('p')
+                    pp.innerText='YOU WON!'
+                    viczone.append(pp)
                 }, 100); 
             }
             else if (lingyao.dataset.health < 0) {
                 green1.style.width = '0px'
                 setTimeout(() => {
-                    alert('You lost')   
+                   fightzone.style.display='none'
+                    viczone.style.display='flex'
+                    var pp = document.createElement('p')
+                    pp.innerText='YOU LOST!'
+                    viczone.append(pp)    
                    }, 100);
             }
         }
@@ -415,13 +496,21 @@ alphonse.dataset.health =alphonse.dataset.health - (Math.floor(Math.random() * s
             if (edward.dataset.health < 0) {
                 green2.style.width = '0px'
                 setTimeout(() => {
-                    alert('You won')
+                    fightzone.style.display='none'
+                    viczone.style.display='flex'
+                    var pp = document.createElement('p')
+                    pp.innerText='YOU WON!'
+                    viczone.append(pp)
                 }, 100); 
             }
             else if (lingyao.dataset.health < 0) {
                 green1.style.width = '0px'
                 setTimeout(() => {
-                    alert('You lost')   
+                    fightzone.style.display='none'
+                    viczone.style.display='flex'
+                    var pp = document.createElement('p')
+                    pp.innerText='YOU LOST!'
+                    viczone.append(pp)    
                    }, 100);
             }
         }
@@ -433,13 +522,21 @@ alphonse.dataset.health =alphonse.dataset.health - (Math.floor(Math.random() * s
             if (alphonse.dataset.health < 0) {
                 green2.style.width = '0px'
                 setTimeout(() => {
-                    alert('You won')
+                    fightzone.style.display='none'
+                    viczone.style.display='flex'
+                    var pp = document.createElement('p')
+                    pp.innerText='YOU WON!'
+                    viczone.append(pp)
                 }, 100); 
             }
             else if (lingyao.dataset.health < 0) {
                 green1.style.width = '0px'
                 setTimeout(() => {
-                    alert('You lost')   
+                    fightzone.style.display='none'
+                    viczone.style.display='flex'
+                    var pp = document.createElement('p')
+                    pp.innerText='YOU LOST!'
+                    viczone.append(pp)   
                    }, 100);
             }
         }
